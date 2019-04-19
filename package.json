@@ -1,0 +1,35 @@
+{
+  "scripts": {
+    "start": "electron .",
+    "test": "ava -v"
+  },
+  "dependencies": {
+    "electron": "^4.1.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.4.0",
+    "ava": "^1.4.1",
+    "puppeteer": "^1.14.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ],
+      "@babel/preset-react"
+    ]
+  },
+  "ava": {
+    "require": "@babel/register"
+  }
+}
